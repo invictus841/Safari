@@ -38,6 +38,7 @@
 		ACA8D871280415A900D3CA0E /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D870280415A900D3CA0E /* HeadingView.swift */; };
 		ACA8D8732804175B00D3CA0E /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D8722804175B00D3CA0E /* InsetGalleryView.swift */; };
 		ACA8D875280473C000D3CA0E /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D874280473C000D3CA0E /* InsetFactView.swift */; };
+		ACA8D8772804781500D3CA0E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D8762804781500D3CA0E /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		ACA8D870280415A900D3CA0E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		ACA8D8722804175B00D3CA0E /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		ACA8D874280473C000D3CA0E /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		ACA8D8762804781500D3CA0E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				ACA8D870280415A900D3CA0E /* HeadingView.swift */,
 				ACA8D8722804175B00D3CA0E /* InsetGalleryView.swift */,
 				ACA8D874280473C000D3CA0E /* InsetFactView.swift */,
+				ACA8D8762804781500D3CA0E /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				ACA8D86F280410EC00D3CA0E /* AnimalDetailView.swift in Sources */,
 				ACA8D86D2801E72300D3CA0E /* AnimalModel.swift in Sources */,
 				AC61524027FD7EF0003474BD /* MapView.swift in Sources */,
+				ACA8D8772804781500D3CA0E /* InsetMapView.swift in Sources */,
 				AC61521027FD7601003474BD /* SafariApp.swift in Sources */,
 				AC61523E27FD7EDC003474BD /* VideoListView.swift in Sources */,
 				AC61524227FD7F01003474BD /* GalleryView.swift in Sources */,
