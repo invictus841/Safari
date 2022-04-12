@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VideoListItem: View {
+struct VideoListItemView: View {
     // MARK: - PROPERTIES
     
     let video: Video
@@ -18,7 +18,7 @@ struct VideoListItem: View {
     var body: some View {
         HStack(spacing: 10) {
             ZStack {
-                Image("video-\(video.id)")
+                Image(video.thumbnail)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 80)
@@ -54,7 +54,7 @@ struct VideoListItem_Previews: PreviewProvider {
     static let videos: [Video] = Bundle.main.decode("videos.json")
     
     static var previews: some View {
-        VideoListItem(video: videos[0])
+        VideoListItemView(video: videos[0])
             .previewLayout(.sizeThatFits)
             .padding()
     }
