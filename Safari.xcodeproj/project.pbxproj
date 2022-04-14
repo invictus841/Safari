@@ -46,7 +46,9 @@
 		ACC71B492808584100F2D33E /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC71B482808584000F2D33E /* MotionAnimationView.swift */; };
 		ACC71B4B2808923D00F2D33E /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC71B4A2808923D00F2D33E /* AnimalGridItemView.swift */; };
 		ACC71B5128089BC700F2D33E /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC71B5028089BC700F2D33E /* Stickers.xcassets */; };
-		ACC71B5528089BC700F2D33E /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACC71B4E28089BC500F2D33E /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACC71B5528089BC700F2D33E /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACC71B4E28089BC500F2D33E /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACC71B5B28089EA400F2D33E /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC71B5A28089EA400F2D33E /* CreditsView.swift */; };
+		ACC71B602808A0B100F2D33E /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC71B5F2808A0B100F2D33E /* CenterModifier.swift */; };
 		ACFFB2B728057E100065DC2C /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFB2B628057E100065DC2C /* VideoPlayerHelper.swift */; };
 		ACFFB2B92805CBF90065DC2C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFB2B82805CBF90065DC2C /* LocationModel.swift */; };
 		ACFFB2BD2806B4740065DC2C /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFB2BC2806B4740065DC2C /* MapAnnotationView.swift */; };
@@ -120,6 +122,9 @@
 		ACC71B4E28089BC500F2D33E /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC71B5028089BC700F2D33E /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		ACC71B5228089BC700F2D33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC71B5A28089EA400F2D33E /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		ACC71B5F2808A0B100F2D33E /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		ACC71B612808A19700F2D33E /* Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safari.entitlements; sourceTree = "<group>"; };
 		ACFFB2B628057E100065DC2C /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		ACFFB2B82805CBF90065DC2C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		ACFFB2BC2806B4740065DC2C /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
@@ -157,6 +162,8 @@
 		AC61520E27FD7601003474BD /* Safari */ = {
 			isa = PBXGroup;
 			children = (
+				ACC71B612808A19700F2D33E /* Safari.entitlements */,
+				ACC71B5C2808A08700F2D33E /* Modifier */,
 				ACFFB2B528057DFA0065DC2C /* Helper */,
 				ACA8D86727FEDC3D00D3CA0E /* Extension */,
 				AC61524827FEC3B9003474BD /* Model */,
@@ -236,6 +243,7 @@
 				ACFFB2BC2806B4740065DC2C /* MapAnnotationView.swift */,
 				ACC71B482808584000F2D33E /* MotionAnimationView.swift */,
 				ACC71B4A2808923D00F2D33E /* AnimalGridItemView.swift */,
+				ACC71B5A28089EA400F2D33E /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +274,14 @@
 				ACC71B5228089BC700F2D33E /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		ACC71B5C2808A08700F2D33E /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				ACC71B5F2808A0B100F2D33E /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 		ACFFB2B528057DFA0065DC2C /* Helper */ = {
@@ -410,8 +426,10 @@
 				ACC71B4B2808923D00F2D33E /* AnimalGridItemView.swift in Sources */,
 				ACA8D8732804175B00D3CA0E /* InsetGalleryView.swift in Sources */,
 				ACA8D87D28055D1600D3CA0E /* VideoListItemView.swift in Sources */,
+				ACC71B5B28089EA400F2D33E /* CreditsView.swift in Sources */,
 				ACA8D86927FEDC5200D3CA0E /* CodableBundleExtension.swift in Sources */,
 				ACC71B492808584100F2D33E /* MotionAnimationView.swift in Sources */,
+				ACC71B602808A0B100F2D33E /* CenterModifier.swift in Sources */,
 				ACA8D871280415A900D3CA0E /* HeadingView.swift in Sources */,
 				ACA8D87F2805750400D3CA0E /* VideoPlayerView.swift in Sources */,
 			);
@@ -422,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		ACC71B5428089BC700F2D33E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = ACC71B4D28089BC500F2D33E /* Stickers */;
 			targetProxy = ACC71B5328089BC700F2D33E /* PBXContainerItemProxy */;
 		};
@@ -547,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Safari/Safari.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Safari/Preview Content\"";
@@ -556,6 +576,7 @@
 				INFOPLIST_FILE = Safari/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
@@ -566,6 +587,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Safari/Safari.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Safari/Preview Content\"";
@@ -586,6 +609,7 @@
 				INFOPLIST_FILE = Safari/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
@@ -596,6 +620,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,6 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.Safari.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,6 +663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandre-Narek.Safari.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
